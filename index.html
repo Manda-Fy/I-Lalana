@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I-Lalana</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="overlay" id="overlay"></div>
+
+    <header class="site-header">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu">
+            &#9776; <!-- Hamburger Icon -->
+        </button>
+        
+    </header>
+
+    <div class="main-container">
+        <aside class="side-panel" id="side-nav">
+            <h3>Sujets</h3>
+            <nav class="nav-list">
+                <!-- Les liens seront chargés ici, mais nous pouvons en mettre un pour l'exemple -->
+                <a href="vol.html" data-page="vol">Vol</a>
+                <a href="escroquerie.html" data-page="escroquerie">Escroquerie</a>
+                <a href="violence.html" data-page="violence">Violence</a>
+                <a href="infraction.html" data-page="infraction">Infraction routière</a>
+                <a href="vandalisme.html" data-page="vandalisme">Vandalisme</a>
+                <a href="faux-document.html" data-page="faux-document">Faux document</a>
+                <hr/>
+                <a href="A propos.html" data-page="a-propos">À propos</a>
+            </nav>
+        </aside>
+
+        <main class="content-area" id="main-content">
+            <section class="welcome-hero">
+                <div class="text-center">
+                    <h1>Partez vers le Droits chemin</h1>
+                    <p id="information">Nous vous offrons des guides sur des sujets juridiques dans laquelle vous etes confronté
+                        On vous synthétisant les informations et les éclairissants
+                    </p>
+                </div>
+            </section>
+            <section class="card-section">
+                <div class="card-container">
+                    <div class="card">
+                        <h3>Simple & Rapide</h3>
+                        <p>Accédez à l'information dont vous avez besoin en quelques clics, sans jargon compliqué.</p>
+                        <a href="#">En savoir plus</a>
+                    </div>
+                    <div class="card">
+                        <h3>Thèmes Clés</h3>
+                        <p>Retrouvez les sujets juridiques les plus courants, organisés de manière claire et logique.</p>
+                        <a href="#">Explorer les sujets</a>
+                    </div>
+                    <div class="card">
+                        <h3>Fiable & Concret</h3>
+                        <p>Des informations synthétisées et vulgarisées pour vous aider à comprendre vos droits au quotidien.</p>
+                        <a href="#">Notre mission</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

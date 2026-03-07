@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Lato:wght@400;700&display=swap');
+
+
+:root {
+  --font-primary: 'DM Sans';
+  --font-secondary: 'Roboto';
+  --color-background: rgba(244, 236, 235);
+  --color-text: #7a3d14;
+  --color-primary: #7a3d14; 
+  --color-primary-light: #ffffff; 
+  --text-on-image: #7a3d14;
+}
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-primary);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+  color: var(--color-text);
+  margin-top: 0;
+  line-height: 1.2;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+
+
+.site-header {
+  display: flex;
+  align-items: center;
+  padding: 0.025rem;
+  background-color: transparent; 
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.menu-toggle {
+  background: none;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  margin-right: 1rem;
+  color: var(--color-primary);
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.menu-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.site-title {
+  font-family: var(--font-secondary);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.main-container {
+  display: flex;
+}
+
+/* 
+  ========================================
+  Volet de Navigation Latéral
+  ========================================
+*/
+.side-panel {
+  position: fixed;
+  top: 0;
+  left: -280px; /* Caché par défaut */
+  width: 280px;
+  height: 100vh;
+  background-color: var(--color-primary);
+  color: var(--color-primary-light);
+  padding: 1.5rem;
+  transition: left 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+  z-index: 200;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  overflow-y: auto;
+}
+
+.side-panel.is-open {
+  left: 0;
+}
+
+.side-panel h3 {
+  color: var(--color-primary-light);
+  font-size: 1.2rem;
+  border-bottom: 1px solid var(--color-primary-light);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list a {
+  display: block;
+  color: var(--color-primary-light);
+  padding: 0.75rem 0;
+  border-radius: 4px;
+  transition: background-color 0.2s, padding-left 0.2s;
+}
+
+.nav-list a:hover {
+  background-color: var(--color-primary);
+  padding-left: 0.5rem; /* Léger décalage au survol */
+}
+
+/* Overlay pour fermer le menu en cliquant à côté */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 199;
+}
+
+.overlay.is-active {
+  display: block;
+}
+
+/* 
+  ========================================
+  Zone de Contenu & Page d'accueil
+  ========================================
+*/
+.content-area {
+  flex-grow: 1;
+  transition: filter 0.3s;
+}
+
+/* Section 1: Plein écran avec image */
+.welcome-hero {
+  min-height: 90vh; /* Hauteur minimale pour remplir l'écran sous le header */
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  padding: 2rem;
+  background-image:  url('img/tingey-injury-law-firm-veNb0DDegzE-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Section 2: Apparaît au scroll */
+.welcome-intro {
+  padding: 4rem 2rem;
+  color: var(--color-text); 
+}
+
+.welcome-intro .text-center {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.welcome-intro p {
+    font-family: var(--font-secondary);
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+/* Utilitaires */
+.text-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text-center > h1 {
+  display: flex;
+  font-family: var(--font-primary);
+  max-width: 400px;
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 0.9;
+  padding: 10px;
+  color: var(--text-on-image);
+  padding-right: 40vw;
+}
+
+.text-center > p {
+  text-align:start;
+  font-family: var(--font-secondary);
+  font-size:15px;
+  max-width: 600px;
+  font-weight:bold;
+  line-height: 0.9;
+}
+#information{
+  font-size: 20px;
+}
+
+/* 
+  ========================================
+  Section des Cartes
+  ========================================
+*/
+.card-section {
+  background-color: transparent; /* Fond transparent */
+  padding: 4rem 2rem;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: var(--color-primary);
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  flex: 1;
+  min-width: 280px;
+  max-width: 350px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid var(--color-border);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.card h3 {
+  font-family: var(--font-primary);
+  color: var(--color-primary-light);
+  margin-bottom: 1rem;
+}
+
+.card p {
+  color: var(--color-primary-light);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  opacity: 0.9; /* Léger estompage pour différencier du titre */
+}
+
+.card a {
+  color: var(--color-text);
+  font-weight: bold;
+  text-decoration: none;
+  background-color: var(--color-primary-light);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.card a:hover {
+  background-color: var(--color-background);
+  color: #fff;
+}
+
+
