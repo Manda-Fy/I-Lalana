@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos - I-Lalàna</title>
+    <style>
+        :root {
+            --primary-blue: #1a2a6c;
+            --gold: #b8926a;
+            --light-grey: #f4f7f6;
+            --text-dark: #333;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-grey);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            background: var(--white);
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--gold);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: var(--primary-blue);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .tagline {
+            font-style: italic;
+            color: var(--gold);
+            font-weight: bold;
+        }
+
+        h2 {
+            color: var(--primary-blue);
+            border-left: 5px solid var(--gold);
+            padding-left: 15px;
+            margin-top: 40px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .mission-box {
+            background-color: #eef2f3;
+            padding: 25px;
+            border-radius: 5px;
+            border-left: 5px solid var(--primary-blue);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .feature-card {
+            background: var(--white);
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--gold);
+        }
+
+        .feature-card strong {
+            color: var(--primary-blue);
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .quote {
+            text-align: center;
+            font-size: 1.2rem;
+            margin: 40px 0;
+            padding: 20px;
+            background: var(--primary-blue);
+            color: var(--white);
+            border-radius: 5px;
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .btn {
+            background-color: var(--gold);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #9a7a56;
+        }
+
+        @media (max-width: 600px) {
+            .container { margin: 20px; padding: 20px; }
+            h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>I-Lalàna</h1>
+            <p class="tagline">Rendre le droit accessible à tous, surtout quand le doute s’installe.</p>
+        </header>
+
+        <section>
+            <p>
+                La loi est la base de notre vie en société, pourtant, elle semble souvent écrite dans une langue que peu d'entre nous maîtrisent. Face à un délit commis, qu’il s’agisse d’une erreur de parcours ou d’une méconnaissance des règles, le sentiment d’isolement et la peur de l’inconnu peuvent être paralysants.
+            </p>
+            <p><strong>C’est pour cette raison qu’I-Lalàna est né.</strong></p>
+        </section>
+
+        <section class="mission-box">
+            <h2>Notre Mission</h2>
+            <p>
+                Nous croyons que chaque citoyen a le droit de comprendre sa situation juridique, peu importe son parcours ou son éducation. <strong>I-Lalàna</strong> n'est pas là pour juger, mais pour éclairer. Notre plateforme est conçue pour être une boussole dans les moments de crise, en traduisant la complexité juridique en conseils clairs et actionnables.
+            </p>
+        </section>
+
+        <section>
+            <h2>Ce que nous vous apportons :</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <strong>Clarté immédiate</strong>
+                    Des explications simples sur les textes de loi liés aux délits courants.
+                </div>
+                <div class="feature-card">
+                    <strong>Soutien pédagogique</strong>
+                    Comprendre les étapes d’une procédure pour ne plus subir l’incertitude.
+                </div>
+                <div class="feature-card">
+                    <strong>Orientation</strong>
+                    Savoir vers quels professionnels se tourner et comment préparer sa défense.
+                </div>
+            </div>
+        </section>
+
+        <div class="quote">
+            "Nul n'est censé ignorer la loi. Chez I-Lalàna, nous ajoutons : tout le monde mérite qu'on la lui explique."
+        </div>
+
+        <div class="cta">
+            <a href="#" class="btn">Consulter nos guides</a>
+        </div>
+    </div>
+
+</body>
+</html>
