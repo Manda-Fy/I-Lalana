@@ -59,6 +59,12 @@ font-size: 30px;
 font-family: var(--font-secondary);
 padding-right: 10px;
 }
+
+.site-header .site-logo {
+  width: 40px;
+  margin-right: 10px;
+}
+
 .menu-toggle {
   display: flex;
   background: none;
