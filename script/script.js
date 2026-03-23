@@ -3,12 +3,25 @@ document.addEventListener('DOMContentLoaded', () => {
     const sideNav = document.getElementById('side-nav');
     const overlay = document.getElementById('overlay');
     const mainContent = document.getElementById('main-content');
+    const openSujetsLink = document.getElementById('open-sujets');
 
 
     const openMenu = () => {
         sideNav.classList.add('is-open');
         overlay.classList.add('is-active');
     };
+
+    // Ouvrir le menu "Sujets" depuis le header
+    if (openSujetsLink) {
+        openSujetsLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (sideNav.classList.contains('is-open')) {
+                closeMenu();
+            } else {
+                openMenu();
+            }
+        });
+    }
 
     const closeMenu = () => {
         sideNav.classList.remove('is-open');

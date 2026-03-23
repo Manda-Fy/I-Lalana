@@ -1,30 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>Le Vol - Madagascar</title>
-    <style>
-        body{ font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0;  }
-        header{ background-color: #34495e; color: white; text-align: center; padding: 20px; }
-        .container{ width: 80%; margin: auto; background: white; padding: 20px;  }
-        h2{ color: #34495e; }
-        ul{ line-height: 1.8; }
-        footer{ text-align: center; background: #34495e; color: white; padding: 10px; margin-top: 20px; }
-    </style>
-</head>
-<body>
-
-<header>
-    <h1> Le Vol</h1>
-</header>
-
-<div class="container">
-
-<h2>1. Définition</h2>
-<p>
-Le vol est la soustraction frauduleuse de la chose d'autrui. Il consiste à s'emparer d'un bien appartenant à une autre personne sans son consentement et avec l'intention de se l'approprier.
-</p>
-
+</h2>
 <h2>2. Types de vol </h2>
 
 <h3>Vol simple</h3>

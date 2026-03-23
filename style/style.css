@@ -171,7 +171,7 @@ padding-right: 10px;
   flex-direction: column; 
   justify-content: center;
   padding: 2rem;
-  background-image:  url('img/tingey-injury-law-firm-veNb0DDegzE-unsplash.jpg');
+  background-image:  url('../img/tingey-injury-law-firm-veNb0DDegzE-unsplash.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -293,4 +293,16 @@ padding-right: 10px;
   color: #fff;
 }
 
+.Definition-vol{
+  display: flex;
+  justify-content: space-between;
+  
 
+}
+#Def-De{
+  font-weight: bold;
+  line-height: 0.9;
+  padding: 15px;
+  color: var(--text-on-image);
+  max-width:500px;
+}

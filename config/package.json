@@ -1,0 +1,23 @@
+{
+  "name": "i-lalana",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Manda-Fy/I-Lalana.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Manda-Fy/I-Lalana/issues"
+  },
+  "homepage": "https://github.com/Manda-Fy/I-Lalana#readme",
+  "devDependencies": {
+    "tailwindcss": "^4.2.2"
+  }
+}
