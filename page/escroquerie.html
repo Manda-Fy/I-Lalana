@@ -4,63 +4,301 @@
     <meta charset="UTF-8">
     <title>L'Escroquerie - Madagascar</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body{ font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0; }
-        header{ background-color: #d35400; color: white; text-align: center; padding: 20px; }
-        .container{ width: 80%; margin: auto; background: white; padding: 20px; }
-        h2{ color: #d35400; }
-        ul{ line-height: 1.8; }
-        footer{ text-align: center; background: #d35400; color: white; padding: 10px; margin-top: 20px; }
-    </style>
+
 </head>
 <body>
+  <header class="bg-white dark:bg-amber-900">
+  <div class="mx-auto flex h-16 max-w-7xl items-center gap-8 px-4 sm:px-6 lg:px-8" >
+    <a class="block text-[#ffffff]" href="index.html">
+      <span class="sr-only">Home</span>
+<svg class="h-12 w-auto" viewBox="0 0 100 100" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+  <path d="M45 25 V85 M55 25 V85" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  <path d="M48 30 V80 M52 30 V80" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M35 25 H65 M30 85 H70" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+  <path d="M40 20 L50 10 L60 20 Z" fill="#ffffff"/> <path d="M15 35 C30 30 70 30 85 35" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+  <path d="M15 35 L10 40 M85 35 L90 40" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  
+  <path d="M15 35 V65 M85 35 V65" stroke="#ffffff" stroke-width="2" stroke-dasharray="4 4"/> <path d="M5 65 H25 M75 65 H95" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/> <path d="M15 65 A10 10 0 0 1 15 85 A10 10 0 0 1 15 65 Z" stroke="#ffffff" stroke-width="2"/> <path d="M85 65 A10 10 0 0 1 85 85 A10 10 0 0 1 85 65 Z" stroke="#ffffff" stroke-width="2"/> </svg>
+    </a>
 
-<header>
-    <h1>L'Escroquerie</h1>
+    <div class="flex flex-1 items-center justify-end md:justify-end">
+      <nav aria-label="Global" class="hidden md:block">
+        <ul class="flex items-center gap-6 text-sm">
+          <li>
+            <a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75" href="index.html">
+              Acceuil
+            </a>
+          </li>
+          <li>
+            <a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75" href="A propos.html">
+              A propos
+            </a>
+          </li>
+          <li>
+            <a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75 cursor-pointer" id="open-sujets">
+              Sujets
+            </a>
+          </li>
+        </ul>
+      </nav>
+        <button class="block rounded-sm bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-600/75 md:hidden dark:bg-gray-800 dark:text-white dark:hover:text-white/75">
+          <span class="sr-only">Toggle menu</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="size-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
 </header>
+<section>
+  <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-4 md:grid-cols-4 md:items-center md:gap-8">
+      <div class="md:col-span-1">
+        <div class="max-w-prose md:max-w-none">
+          <h2 class="text-2xl font-semibold text-gray-900 sm:text-3xl">
+            L'Escroquerie
+          </h2>
 
-<div class="container">
+          <p class="mt-4 text-pretty text-gray-700 ">
+          L'escroquerie consiste à obtenir un bien, de l'argent ou un consentement par l'usage d'un faux nom, d'une fausse qualité, ou par des manœuvres frauduleuses destinées à tromper la victime.
+          </p>
+         </div>
+        </div>
+        <div class="md: text-end">
+        <div class="md:col-span-3">
+        <p>Conséquences</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<span class="flex items-center">
+  <span class="h-px flex-1 bg-gradient-to-r from-transparent to-amber-800 dark:to-amber-800"></span>
 
-<h2>1. Définition </h2>
-<p>
-L'escroquerie consiste à obtenir un bien, de l'argent ou un consentement par l'usage d'un faux nom, d'une fausse qualité, ou par des manœuvres frauduleuses destinées à tromper la victime.
-</p>
+  <span class="shrink-0 px-4 text-gray-900 dark:text-amber-800">Formes courantes d'escroquerie</span>
 
-<h2>2. Formes courantes d'escroquerie </h2>
+  <span class="h-px flex-1 bg-gradient-to-l from-transparent to-red-500 dark:to-red-400"></span>
+</span>
+<div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+  <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+    <div class="flex items-start gap-4 rounded-lg border border-gray-200 p-6 dark:border-gray-700">
+      <div class="inline-flex rounded-lg bg-gray-100 p-3 text-gray-700 dark:bg-gray-800 dark:text-gray-200">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"></path>
+        </svg>
+      </div>
 
-<h3>Fraude documentaire</h3>
-<ul>
-<li>Usage de faux documents ou faux contrats </li>
-<li>Usurpation d'identité pour obtenir un crédit </li>
-</ul>
+      <div>
+        <h3 class="text-lg font-semibold text-gray-900 dark:text-teal-800">Fraude documentaire</h3>
 
-<h3>Arnaques numériques</h3>
-<ul>
-<li>Escroquerie via mobile money (arnaques par SMS/Appels) </li>
-<li>Faux investissements en ligne </li>
-</ul>
+        <p class="mt-2 text-pretty text-gray-700 dark:text-teal-800">
+          Usage de faux documents ou faux contrats <br>
+          Usurpation d'identité pour obtenir un crédit
+        </p>
+      </div>
+    </div>
 
-<h2>3. Pièces à fournir pour porter plainte </h2>
-<ul>
-<li>Carte d’Identité Nationale (CIN) </li>
-<li>Copies des échanges (SMS, Emails, captures d'écran) </li>
-<li>Preuves de transfert d'argent (reçus, bordereaux) </li>
-<li>Témoignages de personnes ayant assisté aux manœuvres</li>
-</ul>
+    <div class="flex items-start gap-4 rounded-lg border border-gray-200 p-6 dark:border-gray-700">
+      <div class="inline-flex rounded-lg bg-gray-100 p-3 text-gray-700 dark:bg-gray-800 dark:text-gray-200">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"></path>
+        </svg>
+      </div>
 
-<h2>4. Conséquences juridiques </h2>
-<ul>
-<li>Peines d'emprisonnement ferme </li>
-<li>Amendes proportionnelles au préjudice </li>
-<li>Dommages et intérêts pour la victime </li>
-<li>Interdiction d'exercer certaines professions </li>
-</ul>
+      <div>
+        <h3 class="text-lg font-semibold text-gray-900 dark:text-teal-800">Arnaques numériques</h3>
 
+        <p class="mt-2 text-pretty text-gray-700 dark:text-teal-800">
+         Escroquerie via mobile money (arnaques par SMS/Appels) <br>
+         Faux investissements en ligne
+        </p>
+      </div>
+    </div>
+  </div>
 </div>
+<span class="flex items-center">
+  <span class="h-px flex-1 bg-linear-to-r to-gray-300 dark:to-gray-600"></span>
 
-<footer>
-<p>© 2026 - Informations juridiques Madagascar</p>
+  <span class="shrink-0 px-4 text-gray-900 dark:text-teal-800">Pièces à fournir pour porter plainte</span>
+
+  <span class="h-px flex-1 bg-linear-to-l from-transparent to-gray-300 dark:to-gray-600"></span>
+</span>
+<div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+  <ol class="relative space-y-8 before:absolute before:top-0 before:left-1/2 before:h-full before:w-0.5 before:-translate-x-1/2 before:rounded-full before:bg-gray-200 max-w-md mx-auto">
+    <li class="group relative grid grid-cols-2 odd:-me-3 even:-ms-3">
+      <div class="relative flex items-start gap-4 group-odd:flex-row-reverse group-odd:text-right group-even:order-last">
+        <span class="size-3 shrink-0 rounded-full bg-amber-800"></span>
+
+        <div class="-mt-2">
+
+
+          <h3 class="text-lg font-bold text-gray-900">Carte d'Identité Nationale (CIN) </h3>
+
+          <p class="mt-0.5 text-sm text-gray-700">
+           Pièce d'identité obligatoire pour authentifier le plaignant.
+          </p>
+        </div>
+      </div>
+
+      <div aria-hidden="true"></div>
+    </li>
+
+    <li class="group relative grid grid-cols-2 odd:-me-3 even:-ms-3">
+      <div class="relative flex items-start gap-4 group-odd:flex-row-reverse group-odd:text-right group-even:order-last">
+        <span class="size-3 shrink-0 rounded-full bg-amber-800"></span>
+
+        <div class="-mt-2">
+
+
+          <h3 class="text-lg font-bold text-gray-900">Copies des échanges</h3>
+
+          <p class="mt-0.5 text-sm text-gray-700">
+            Copies des SMS, Emails, captures d'écran des arnaques.
+          </p>
+        </div>
+      </div>
+
+      <div aria-hidden="true"></div>
+    </li>
+
+    <li class="group relative grid grid-cols-2 odd:-me-3 even:-ms-3">
+      <div class="relative flex items-start gap-4 group-odd:flex-row-reverse group-odd:text-right group-even:order-last">
+        <span class="size-3 shrink-0 rounded-full bg-amber-800"></span>
+
+        <div class="-mt-2">
+
+
+          <h3 class="text-lg font-bold text-gray-900">Preuves de transfert</h3>
+
+          <p class="mt-0.5 text-sm text-gray-700">
+           Reçus et bordereaux de transfert d'argent.
+          </p>
+        </div>
+      </div>
+
+      <div aria-hidden="true"></div>
+    </li>
+
+    <li class="group relative grid grid-cols-2 odd:-me-3 even:-ms-3">
+      <div class="relative flex items-start gap-4 group-odd:flex-row-reverse group-odd:text-right group-even:order-last">
+        <span class="size-3 shrink-0 rounded-full bg-amber-800"></span>
+
+        <div class="-mt-2">
+
+
+          <h3 class="text-lg font-bold text-gray-900">Témoignages</h3>
+
+          <p class="mt-0.5 text-sm text-gray-700">
+           Témoignages de personnes ayant assisté aux manœuvres frauduleuses.
+          </p>
+        </div>
+      </div>
+
+      <div aria-hidden="true"></div>
+    </li>
+  </ol>
+</div>
+<span class="flex items-center">
+  <span class="h-px flex-1 bg-gradient-to-r from-transparent to-amber-800 dark:to-amber-800"></span>
+
+  <span class="shrink-0 px-4 text-gray-900 dark:text-amber-800">Conséquences juridiques</span>
+
+  <span class="h-px flex-1 bg-gradient-to-l from-transparent to-red-500 dark:to-red-400"></span>
+</span>
+<div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+  <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+    <div class="flex items-start gap-4 rounded-lg border border-gray-200 p-6 dark:border-gray-700">
+      <div class="inline-flex rounded-lg bg-gray-100 p-3 text-gray-700 dark:bg-gray-800 dark:text-gray-200">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.72m0 0a9.18 9.18 0 0 1-2.272-.615 1.45 1.45 0 0 1-.509-.93 1.47 1.47 0 0 1 .277-.645c.282-.512.626-.966 1.012-1.35m9.245 5.245v-4.5m0 0h-4.5m4.5 0 3-3m-3 3 3 3M3.75 13.5l3-3m-3 3-3 3"></path>
+        </svg>
+      </div>
+
+      <div>
+        <h3 class="text-lg font-semibold text-gray-900 dark:text-teal-800">Emprisonnement</h3>
+
+        <p class="mt-2 text-pretty text-gray-700 dark:text-teal-800">
+          Peines d'emprisonnement ferme
+        </p>
+      </div>
+    </div>
+
+    <div class="flex items-start gap-4 rounded-lg border border-gray-200 p-6 dark:border-gray-700">
+      <div class="inline-flex rounded-lg bg-gray-100 p-3 text-gray-700 dark:bg-gray-800 dark:text-gray-200">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"></path>
+        </svg>
+      </div>
+
+      <div>
+        <h3 class="text-lg font-semibold text-gray-900 dark:text-teal-800">Amendes</h3>
+
+        <p class="mt-2 text-pretty text-gray-700 dark:text-teal-800">
+         Amendes proportionnelles au préjudice
+        </p>
+      </div>
+    </div>
+
+    <div class="flex items-start gap-4 rounded-lg border border-gray-200 p-6 dark:border-gray-700">
+      <div class="inline-flex rounded-lg bg-gray-100 p-3 text-gray-700 dark:bg-gray-800 dark:text-gray-200">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z"></path>
+        </svg>
+      </div>
+
+      <div>
+        <h3 class="text-lg font-semibold text-gray-900 dark:text-teal-800">Dommages et intérêts</h3>
+
+        <p class="mt-2 text-pretty text-gray-700 dark:text-teal-800">
+          Indemnisation pour la victime
+        </p>
+      </div>
+    </div>
+
+    <div class="flex items-start gap-4 rounded-lg border border-gray-200 p-6 dark:border-gray-700">
+      <div class="inline-flex rounded-lg bg-gray-100 p-3 text-gray-700 dark:bg-gray-800 dark:text-gray-200">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z"></path>
+        </svg>
+      </div>
+
+      <div>
+        <h3 class="text-lg font-semibold text-gray-900 dark:text-teal-800">Interdiction professionnelle</h3>
+
+        <p class="mt-2 text-pretty text-gray-700 dark:text-teal-800">
+          Interdiction d'exercer certaines professions
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="bg-gray-100">
+  <div class="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
+    <div class="flex justify-center items-center gap-4 text-teal-600">
+      <svg class="h-12 w-auto" viewBox="0 0 100 100" fill="#592B00" xmlns="http://www.w3.org/2000/svg">
+        <path d="M45 25 V85 M55 25 V85" stroke="#592B00" stroke-width="3" stroke-linecap="round"/>
+        <path d="M48 30 V80 M52 30 V80" stroke="#592B00" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M35 25 H65 M30 85 H70" stroke="#592B00" stroke-width="4" stroke-linecap="round"/>
+        <path d="M40 20 L50 10 L60 20 Z" fill="#592B00"/> 
+        <path d="M15 35 C30 30 70 30 85 35" stroke="#592B00" stroke-width="4" stroke-linecap="round"/>
+        <path d="M15 35 L10 40 M85 35 L90 40" stroke="#592B00" stroke-width="2" stroke-linecap="round"/>
+        <path d="M15 35 V65 M85 35 V65" stroke="#592B00" stroke-width="2" stroke-dasharray="4 4"/> 
+        <path d="M5 65 H25 M75 65 H95" stroke="#592B00" stroke-width="3" stroke-linecap="round"/> 
+        <path d="M15 65 A10 10 0 0 1 15 85 A10 10 0 0 1 15 65 Z" stroke="#592B00" stroke-width="2"/> 
+        <path d="M85 65 A10 10 0 0 1 85 85 A10 10 0 0 1 85 65 Z" stroke="#592B00" stroke-width="2"/> 
+      </svg>
+      
+      <span class="text-2xl font-bold text-[#592B00]">I-Lalana</span>
+    </div>
+  </div>
 </footer>
 
+    <p class="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500">
+     Rendre le droit accessible à tous, surtout quand le doute s'installe.
+    </p>
+  </div>
+</footer>
 </body>
 </html>

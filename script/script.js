@@ -75,6 +75,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 closeMenu();
                 
                 window.scrollTo(0, 0);
+                
+                // Ré-attacher les event listeners après le chargement
+                attachEventListeners();
             })
             .catch(error => {
                 console.error('Erreur lors du chargement de la page:', error);
@@ -82,4 +85,39 @@ document.addEventListener('DOMContentLoaded', () => {
                 closeMenu();
             });
     };
+    
+    // Fonction pour attacher les event listeners aux éléments dynamiques
+    const attachEventListeners = () => {
+        // Ré-attacher l'event listener pour le bouton "Sujets" dans le header
+        const newOpenSujetsLink = document.getElementById('open-sujets');
+        if (newOpenSujetsLink) {
+            newOpenSujetsLink.addEventListener('click', (e) => {
+                e.preventDefault();
+                if (sideNav.classList.contains('is-open')) {
+                    closeMenu();
+                } else {
+                    openMenu();
+                }
+            });
+        }
+        
+        // Ré-attacher les event listeners pour les liens de navigation dans le side nav
+        const newNavLinks = sideNav.querySelectorAll('.nav-list a');
+        newNavLinks.forEach(link => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault();
+                const href = link.getAttribute('href');
+                
+                if (!href || href === '#') {
+                    console.warn('Lien de navigation invalide.');
+                    return;
+                }
+
+                loadContent(href);
+            });
+        });
+    };
+    
+    // Attacher les event listeners initiaux
+    attachEventListeners();
 });

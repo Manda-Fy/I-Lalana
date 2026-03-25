@@ -23,6 +23,7 @@ body {
   background-color: var(--color-background);
   color: var(--color-text);
   line-height: 1.6;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -53,6 +54,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 100;
+
 }
 .site-header > a {
 font-size: 30px;
@@ -105,6 +107,7 @@ padding-right: 10px;
   z-index: 200;
   box-shadow: 0 0 20px rgba(0,0,0,0.3);
   overflow-y: auto;
+ 
 }
 
 .side-panel.is-open {
@@ -161,7 +164,7 @@ padding-right: 10px;
 */
 .content-area {
   flex-grow: 1;
-  transition: filter 0.3s;
+
 }
 
 /* Section 1: Plein écran avec image */
@@ -175,6 +178,7 @@ padding-right: 10px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+ 
 }
 
 /* Section 2: Apparaît au scroll */
@@ -235,6 +239,7 @@ padding-right: 10px;
 .card-section {
   background-color: transparent; /* Fond transparent */
   padding: 4rem 2rem;
+
 }
 
 .card-container {
@@ -256,7 +261,7 @@ padding-right: 10px;
   max-width: 350px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid var(--color-border);
+  border: 3px solid #00ff00; /* Bordure verte pour les cartes */
 }
 
 .card:hover {
