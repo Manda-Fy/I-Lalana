@@ -261,7 +261,7 @@ padding-right: 10px;
   max-width: 350px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 3px solid #00ff00; /* Bordure verte pour les cartes */
+  
 }
 
 .card:hover {
@@ -310,4 +310,60 @@ padding-right: 10px;
   padding: 15px;
   color: var(--text-on-image);
   max-width:500px;
+}
+
+.page-drogue {
+  background-image: url('/img/Drogue.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.page-escroquerie {
+  background-image: url('../img/escroquerie.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.page-faux-document {
+  background-image: url('../img/fauxdocument.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.page-infraction {
+  background-image: url('../img/route.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.page-vandalisme {
+  background-image: url('../img/vandalisme.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.page-violence {
+  background-image: url('../img/violence.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.page-vol {
+  background-image: url('../img/vol.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
